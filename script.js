@@ -1,1 +1,1 @@
-23232
+console.log("Shakya Learning Website Loaded");
