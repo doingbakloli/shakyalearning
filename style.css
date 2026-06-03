@@ -315,3 +315,20 @@ text-align:center;
 }
 
 }
+/* TEAM PAGE HEADER FIX */
+
+header nav{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+header nav a{
+text-decoration:none;
+font-weight:600;
+color:#111;
+}
+
+header nav a:hover{
+color:#0b2341;
+}
