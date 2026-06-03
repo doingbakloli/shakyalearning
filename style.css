@@ -1,1 +1,123 @@
-2323213
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+line-height:1.6;
+color:#222;
+background:#f6f6f6;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.logo{
+height:70px;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#111;
+font-weight:bold;
+}
+
+.hero{
+min-height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:60px 20px;
+background:#ececec;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+background:#0b2341;
+color:white;
+padding:14px 28px;
+text-decoration:none;
+border-radius:4px;
+}
+
+.btn-secondary{
+background:#444;
+}
+
+.intro{
+padding:80px 10%;
+background:white;
+}
+
+.intro h2{
+margin-bottom:20px;
+font-size:40px;
+}
+
+.cta{
+padding:100px 10%;
+text-align:center;
+}
+
+.cta h2{
+font-size:42px;
+margin-bottom:15px;
+}
+
+footer{
+background:#0b2341;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.intro h2{
+font-size:30px;
+}
+
+.cta h2{
+font-size:30px;
+}
+
+.logo{
+height:50px;
+}
+
+.header{
+flex-direction:column;
+gap:15px;
+}
+
+}
