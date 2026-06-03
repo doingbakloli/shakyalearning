@@ -1,292 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:'Inter',sans-serif;
-background:#efefec;
-color:#111;
-line-height:1.6;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-img{
-max-width:100%;
-display:block;
-}
-
-.container{
-width:90%;
-max-width:1400px;
-margin:auto;
-}
-
-header{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-padding:35px 70px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:100;
-}
-
-.logo{
-font-family:'Oswald',sans-serif;
-font-size:14px;
-font-weight:700;
-letter-spacing:1px;
-text-transform:uppercase;
-}
-
-.nav-links{
-display:flex;
-gap:30px;
-align-items:center;
-}
-
-.nav-links a{
-font-size:12px;
-font-weight:600;
-}
-
-.btn{
-background:#fff;
-color:#111;
-padding:12px 30px;
-font-size:12px;
-font-weight:600;
-border-radius:3px;
-display:inline-block;
-}
-
-.hero{
-height:100vh;
-background:url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1800&q=80');
-background-size:cover;
-background-position:center;
-position:relative;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero::before{
-content:'';
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.45);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-max-width:900px;
-color:#fff;
-}
-
-.hero-content h1{
-font-family:'Oswald',sans-serif;
-font-size:64px;
-line-height:1.1;
-text-transform:uppercase;
-margin-bottom:20px;
-}
-
-.hero-content p{
-max-width:700px;
-margin:auto;
-font-size:15px;
-margin-bottom:40px;
-}
-
-.blue-band{
-background:#1f3b5d;
-padding:70px 0;
-color:white;
-}
-
-.band-grid{
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-gap:50px;
-align-items:start;
-}
-
-.band-grid h2{
-font-family:'Oswald',sans-serif;
-font-size:52px;
-line-height:1;
-text-transform:uppercase;
-}
-
-.band-grid p{
-font-size:14px;
-}
-
-.large-image{
-height:700px;
-background:url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1800&q=80');
-background-size:cover;
-background-position:center;
-}
-
-.page-hero{
-padding:220px 0 140px;
-}
-
-.two-col{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:80px;
-align-items:center;
-}
-
-.section{
-padding:120px 0;
-}
-
-.section h2{
-font-family:'Oswald',sans-serif;
-font-size:48px;
-margin-bottom:20px;
-text-transform:uppercase;
-}
-
-.section h3{
-font-family:'Oswald',sans-serif;
-font-size:32px;
-margin-top:35px;
-margin-bottom:15px;
-text-transform:uppercase;
-}
-
+```css
 .team-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:70px;
+gap:50px;
+margin-top:50px;
 }
 
-.member{
-display:grid;
-grid-template-columns:220px 1fr;
-gap:25px;
-align-items:start;
+.team-card{
+background:#ffffff;
+padding:30px;
+border:1px solid #e5e5e5;
 }
 
-.member img{
-width:220px;
-height:280px;
+.team-card img{
+width:100%;
+height:320px;
 object-fit:cover;
+margin-bottom:20px;
 }
 
-.member h3{
-font-family:'Oswald',sans-serif;
-margin-bottom:10px;
-text-transform:uppercase;
+.team-card h3{
+margin-bottom:5px;
 }
 
-.contact-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:80px;
-align-items:center;
-}
-
-form{
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-input,
-textarea{
-padding:15px;
-border:2px solid #222;
-background:transparent;
-border-radius:8px;
-}
-
-textarea{
-height:150px;
-}
-
-.submit-btn{
-background:#1f3b5d;
-color:white;
-border:none;
-padding:15px;
-cursor:pointer;
-}
-
-.services-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:70px;
-margin-top:80px;
-}
-
-.service-item h3{
-font-family:'Oswald',sans-serif;
-font-size:30px;
+.designation{
+font-weight:600;
 margin-bottom:15px;
-text-transform:uppercase;
+color:#1f3b5b;
 }
 
-.cta{
-background:#1f3b5d;
-color:white;
-padding:150px 0;
-text-align:center;
+.team-card p{
+line-height:1.7;
 }
 
-.cta h2{
-font-family:'Oswald',sans-serif;
-font-size:48px;
-text-transform:uppercase;
-margin-bottom:25px;
-}
+@media(max-width:768px){
 
-footer{
-background:#1f3b5d;
-height:120px;
-}
-
-@media(max-width:900px){
-
-.hero-content h1{
-font-size:38px;
-}
-
-.band-grid,
-.two-col,
-.contact-grid,
-.services-grid,
 .team-grid{
 grid-template-columns:1fr;
 }
 
-.member{
-grid-template-columns:1fr;
+.team-card img{
+height:280px;
 }
 
-header{
-padding:25px;
 }
-
-.hero{
-height:80vh;
-}
-}
-
+```
