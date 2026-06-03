@@ -290,17 +290,3 @@ height:80vh;
 }
 }
 
-
-
-.logo{
-display:flex;
-align-items:center;
-gap:15px;
-font-weight:700;
-}
-
-.header-logo{
-height:10px;
-width:auto;
-display:block;
-}
