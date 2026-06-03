@@ -84,11 +84,23 @@ opacity:.9;
 .hero{
 min-height:80vh;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 padding:60px 20px;
-background:#ececec;
+
+background:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
+),
+url("images/hero.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+color:white;
 }
 
 .hero h1{
