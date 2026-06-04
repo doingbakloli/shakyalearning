@@ -588,3 +588,26 @@ color:#002b4f;
 background:white;
 font-weight:700;
 }
+header nav a,
+header nav a:visited{
+    color:#0b2341 !important;
+    text-decoration:none;
+}
+
+header nav a:hover{
+    color:#35506f !important;
+}
+
+.services-cta .btn{
+    background:#ffffff !important;
+    color:#0b2341 !important;
+    padding:16px 34px;
+    border-radius:4px;
+    font-weight:700;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.services-cta .btn:hover{
+    background:#e8edf2 !important;
+}
