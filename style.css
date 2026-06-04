@@ -611,3 +611,13 @@ header nav a:hover{
 .services-cta .btn:hover{
     background:#e8edf2 !important;
 }
+/* BOOK NOW button text fix */
+
+header .btn,
+header .btn:visited{
+    color:#ffffff !important;
+}
+
+header .btn:hover{
+    color:#ffffff !important;
+}
