@@ -516,3 +516,20 @@ header .btn:visited{
 header .btn:hover{
     color:#ffffff !important;
 }
+
+/* ABOUT PAGE CTA BUTTON FIX */
+
+.cta .btn{
+    background:#ffffff !important;
+    color:#0b2341 !important;
+    padding:16px 34px !important;
+    border-radius:6px !important;
+    text-decoration:none !important;
+    font-weight:700 !important;
+    display:inline-block !important;
+    margin:10px !important;
+}
+
+.cta .btn:hover{
+    background:#e8edf2 !important;
+}
