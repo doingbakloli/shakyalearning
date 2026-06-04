@@ -343,9 +343,16 @@ padding:12px 28px;
 ========================= */
 
 .services-hero{
-background-image:url("images/services-banner.jpg");
+background:
+linear-gradient(
+rgba(11,35,65,0.65),
+rgba(11,35,65,0.65)
+),
+url("images/imagesservices-banner.jpg");
+
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 min-height:550px;
 display:flex;
 align-items:center;
@@ -354,7 +361,6 @@ position:relative;
 }
 
 .services-overlay{
-background:rgba(11,35,65,0.75);
 padding:80px;
 text-align:center;
 max-width:1000px;
