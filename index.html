@@ -7,7 +7,9 @@
 <title>Shakya Learning & Development</title>
 
 <link rel="stylesheet" href="style.css">
-
+  
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -46,7 +48,7 @@ BOOK NOW
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-content" data-aos="fade-up">
 
 <h1>
 UNLOCK HUMAN POTENTIAL.<br>
@@ -68,20 +70,20 @@ START NOW
 
 </section>
 
-<section class="blue-band">
+<section class="blue-band" data-aos="fade-up">
 
 <div class="container">
 
 <div class="band-grid">
 
-<div>
+<div data-aos="fade-right">
 <h2>
-WHO<br>
+WHO
 WE ARE
 </h2>
 </div>
 
-<div>
+<div data-aos="fade-up">
 <p>
 Shakya Learning & Development helps organizations
 build high-performing teams through customized
@@ -90,7 +92,7 @@ coaching, and consulting interventions.
 </p>
 </div>
 
-<div>
+<div data-aos="fade-left">
 <p>
 Our solutions are practical, engaging,
 and designed to create measurable business impact
@@ -241,7 +243,16 @@ improve performance, and drive sustainable growth.
 
 </div>
   
-</footer>
+<footer data-aos="fade-up">
+  
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+</script>
+  
 </body>
 </html>
