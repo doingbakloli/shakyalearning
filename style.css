@@ -739,3 +739,121 @@ padding:30px 15px;
 }
 
 }
+
+
+/* ========================================
+   ABOUT PAGE PREMIUM ENHANCEMENTS
+======================================== */
+
+/* Better Section Spacing */
+
+.page-hero,
+.section{
+padding-top:90px;
+padding-bottom:90px;
+}
+
+/* Headings */
+
+.page-hero h2,
+.section h2{
+color:#0b2341;
+font-size:42px;
+margin-bottom:25px;
+line-height:1.2;
+}
+
+.section p{
+font-size:17px;
+}
+
+/* Image Effects */
+
+.page-hero img,
+.two-col img{
+border-radius:10px;
+transition:all .5s ease;
+box-shadow:0 10px 30px rgba(0,0,0,.10);
+}
+
+.page-hero img:hover,
+.two-col img:hover{
+transform:scale(1.03);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* Mission Section */
+
+.section h2{
+margin-bottom:20px;
+}
+
+/* Values Cards */
+
+.services-grid{
+margin-top:40px;
+}
+
+.service-card{
+transition:all .35s ease;
+cursor:pointer;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* Expertise List */
+
+.section p{
+transition:.3s;
+}
+
+.section p:hover{
+transform:translateX(6px);
+}
+
+/* CTA */
+
+.cta{
+overflow:hidden;
+position:relative;
+}
+
+.cta .btn{
+transition:all .3s ease !important;
+}
+
+.cta .btn:hover{
+transform:translateY(-3px);
+}
+
+/* Footer */
+
+footer{
+padding:35px;
+}
+
+/* Mobile Improvements */
+
+@media(max-width:768px){
+
+.page-hero h2,
+.section h2{
+font-size:30px;
+text-align:center;
+}
+
+.page-hero p,
+.section p{
+text-align:center;
+}
+
+.page-hero,
+.section{
+padding-top:60px;
+padding-bottom:60px;
+}
+
+}
