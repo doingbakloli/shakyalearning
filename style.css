@@ -1151,3 +1151,85 @@ font-size:12px;
 /* =========================================
 END OF STYLESHEET
 ========================================= */
+
+/* GLOBAL BUTTON FIX */
+
+.btn,
+.btn:visited{
+background:#0b2341 !important;
+color:#ffffff !important;
+border:none;
+text-decoration:none;
+}
+
+.btn:hover{
+background:#183a63 !important;
+color:#ffffff !important;
+}
+
+/* HEADER BOOK NOW FIX */
+
+header .btn,
+header .btn:visited{
+background:#0b2341 !important;
+color:#ffffff !important;
+padding:14px 28px !important;
+border-radius:6px !important;
+display:inline-block !important;
+font-weight:700 !important;
+text-decoration:none !important;
+}
+
+/* FOOTER FIX */
+
+footer{
+background:#0b2341 !important;
+color:#ffffff !important;
+text-align:center;
+padding:40px 20px !important;
+}
+
+footer p{
+color:#ffffff !important;
+}
+
+footer a{
+color:#ffffff !important;
+}
+
+.footer-buttons{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+margin-top:25px;
+flex-wrap:wrap;
+}
+
+.footer-btn{
+background:#ffffff;
+color:#0b2341 !important;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+font-weight:700;
+display:inline-block;
+}
+
+.footer-btn:hover{
+background:#e9eef5;
+}
+
+.cta-buttons{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.cta-buttons .btn{
+min-width:260px;
+text-align:center;
+}
