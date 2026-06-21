@@ -1,11 +1,5 @@
-/* =========================================
-SHAKYA LEARNING & DEVELOPMENT
-PART 1
-GLOBAL + HEADER + BUTTONS + FOOTER
-========================================= */
-
 /* =========================
-RESET
+   GLOBAL
 ========================= */
 
 *{
@@ -14,44 +8,12 @@ padding:0;
 box-sizing:border-box;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f7f8fa;
-color:#222;
+font-family:Arial, sans-serif;
 line-height:1.7;
-overflow-x:hidden;
-animation:pageFade .8s ease;
+color:#222;
+background:#f6f6f6;
 }
-
-@keyframes pageFade{
-from{
-opacity:0;
-}
-to{
-opacity:1;
-}
-}
-
-img{
-max-width:100%;
-display:block;
-}
-
-a{
-text-decoration:none;
-}
-
-ul{
-list-style:none;
-}
-
-/* =========================
-CONTAINER
-========================= */
 
 .container{
 width:90%;
@@ -60,234 +22,73 @@ margin:auto;
 }
 
 .section{
-padding:90px 0;
+padding:80px 0;
+}
+
+img{
+max-width:100%;
+display:block;
 }
 
 /* =========================
-TYPOGRAPHY
-========================= */
-
-h1{
-font-size:56px;
-line-height:1.15;
-font-weight:700;
-color:#0b2341;
-}
-
-h2{
-font-size:42px;
-line-height:1.2;
-font-weight:700;
-color:#0b2341;
-margin-bottom:20px;
-}
-
-h3{
-font-size:24px;
-font-weight:700;
-color:#0b2341;
-margin-bottom:12px;
-}
-
-h4{
-font-size:18px;
-font-weight:600;
-color:#35506f;
-margin-bottom:15px;
-}
-
-p{
-font-size:17px;
-color:#444;
-line-height:1.8;
-}
-
-/* =========================
-HEADER
+   HEADER
 ========================= */
 
 header{
-position:sticky;
-top:0;
-z-index:999;
-background:#ffffff;
-padding:18px 5%;
+background:#fff;
+padding:20px 5%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-box-shadow:0 2px 12px rgba(0,0,0,.06);
-transition:all .3s ease;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:100;
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.logo span{
-font-size:15px;
 font-weight:700;
-color:#0b2341;
-line-height:1.3;
+font-size:18px;
+color:#111;
 }
-
-.header-logo{
-width:52px;
-height:52px;
-border-radius:50%;
-object-fit:cover;
-}
-
-/* =========================
-NAVIGATION
-========================= */
 
 .nav-links{
 display:flex;
+gap:20px;
 align-items:center;
-gap:28px;
 }
 
 .nav-links a{
-font-size:14px;
-font-weight:700;
-letter-spacing:.5px;
-color:#0b2341;
-transition:.3s ease;
+text-decoration:none;
+font-weight:600;
+color:#111;
 }
 
-.nav-links a:hover
-
-/* =========================
-BUTTONS
-========================= */
-
 .btn{
-display:inline-block;
 background:#0b2341;
 color:#ffffff !important;
 padding:14px 28px;
-border-radius:6px;
+text-decoration:none;
+border-radius:4px;
 font-weight:700;
-font-size:14px;
-letter-spacing:.4px;
-transition:
-transform .3s ease,
-box-shadow .3s ease,
-background .3s ease;
+display:inline-block;
 }
 
 .btn:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 20px rgba(0,0,0,.15);
-}
-
-.btn:active{
-transform:translateY(0);
+opacity:.9;
 }
 
 /* =========================
-WHITE CTA BUTTONS
-========================= */
-
-.cta .btn,
-.services-cta .btn{
-background:#ffffff;
-color:#0b2341 !important;
-}
-
-.cta .btn:hover,
-.services-cta .btn:hover
-
-/* =========================
-FOOTER
-========================= */
-
-footer{
-background:#0b2341;
-color:#ffffff;
-text-align:center;
-padding:45px 20px;
-}
-
-footer p{
-color:#ffffff;
-margin:6px 0;
-}
-
-.footer-buttons{
-display:flex;
-justify-content:center;
-gap:15px;
-margin-top:20px;
-flex-wrap:wrap;
-}
-
-.footer-btn{
-background:#ffffff;
-color:#0b2341 !important;
-padding:12px 22px;
-border-radius:6px;
-font-weight:700;
-transition:
-transform .3s ease,
-box-shadow .3s ease;
-}
-
-.footer-btn:hover{
-transform:translateY(-4px);
-box-shadow:0 10px 20px rgba(0,0,0,.15);
-}
-
-/* =========================
-COMMON CARD EFFECT
-========================= */
-
-.service-card{
-background:#ffffff;
-border-radius:10px;
-box-shadow:0 5px 18px rgba(0,0,0,.08);
-transition:
-transform .35s ease,
-box-shadow .35s ease;
-}
-
-.service-card:hover{
-transform:translateY(-8px);
-box-shadow:0 15px 35px rgba(0,0,0,.12);
-}
-
-/* =========================
-IMAGE EFFECTS
-========================= */
-
-.two-col img,
-.team-member img{
-border-radius:10px;
-transition:
-transform .45s ease,
-box-shadow .45s ease;
-}
-
-.two-col img:hover,
-.team-member img:hover{
-transform:scale(1.03);
-box-shadow:0 18px 40px rgba(0,0,0,.15);
-}
-
-
-/* =========================================
-PART 2
-HOME + ABOUT PAGE
-========================================= */
-
-/* =========================
-HOME HERO
+   HOME PAGE
 ========================= */
 
 .hero{
-min-height:85vh;
+min-height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:60px 20px;
 
 background:
 linear-gradient(
@@ -300,95 +101,48 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-
-padding:80px 20px;
-}
-
-.hero-content{
-max-width:1000px;
+color:white;
 }
 
 .hero h1{
-color:#ffffff;
-margin-bottom:30px;
+font-size:56px;
+margin-bottom:25px;
+line-height:1.2;
 }
 
 .hero p{
-color:#ffffff;
 font-size:22px;
-max-width:900px;
-margin:auto;
-margin-bottom:35px;
+max-width:1000px;
+margin:auto auto 30px;
+}
+
+.intro{
+background:#fff;
+padding:80px 10%;
+}
+
+.intro h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta{
+padding:100px 10%;
+text-align:center;
+}
+
+.cta h2{
+font-size:42px;
+margin-bottom:20px;
 }
 
 /* =========================
-BLUE BAND
-========================= */
-
-.blue-band{
-background:#0b2341;
-padding:90px 0;
-color:#ffffff;
-}
-
-.band-grid{
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-gap:50px;
-align-items:center;
-}
-
-.band-grid h2{
-color:#ffffff;
-font-size:46px;
-margin-bottom:0;
-}
-
-.band-grid p{
-color:#ffffff;
-font-size:17px;
-}
-
-/* =========================
-SERVICES GRID
-========================= */
-
-.services-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:30px;
-margin-top:40px;
-}
-
-.service-card{
-padding:35px;
-}
-
-.service-card h2{
-font-size:26px;
-margin-bottom:15px;
-}
-
-.service-card h3{
-font-size:24px;
-margin-bottom:15px;
-}
-
-.service-card p{
-font-size:16px;
-}
-
-/* =========================
-ABOUT HERO
+   ABOUT PAGE
 ========================= */
 
 .page-hero{
-background:#eef1f5;
-padding:90px 0;
+padding:40px 0;
+background:#ececec;
 }
 
 .two-col{
@@ -398,288 +152,89 @@ gap:60px;
 align-items:center;
 }
 
+.two-col img{
+width:100%;
+border-radius:6px;
+}
+
 .page-hero h2{
-font-size:52px;
+font-size:48px;
 margin-bottom:25px;
+line-height:1.2;
 }
 
 .page-hero p{
 font-size:18px;
 }
 
-/* =========================
-MISSION SECTION
-========================= */
-
-.section h2{
-margin-bottom:20px;
-}
-
-.section p{
-max-width:100%;
-}
-
-/* =========================
-VALUES SECTION
-========================= */
-
-.service-card h3{
-color:#0b2341;
-font-weight:700;
-}
-
-/* =========================
-EXPERTISE LIST
-========================= */
-
-.expertise-list{
-margin-top:25px;
-}
-
-.expertise-list li{
-padding:12px 0;
-border-bottom:1px solid #e5e5e5;
-font-size:17px;
-font-weight:500;
-transition:.3s ease;
-}
-
-.expertise-list li:hover{
-padding-left:10px;
-color:#0b2341;
-}
-
-/* =========================
-FOUNDER SECTION
-========================= */
-
-.founder-section{
-background:#f7f8fa;
-}
-
-.founder-card{
-max-width:900px;
-margin:auto;
-background:#ffffff;
-padding:50px;
-border-radius:12px;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-.founder-card h2{
-text-align:center;
-margin-bottom:25px;
-}
-
-.founder-card p{
-margin-bottom:15px;
-}
-
-/* =========================
-CTA SECTION
-========================= */
-
-.cta{
+.blue-band{
 background:#0b2341;
-color:#ffffff;
-text-align:center;
-padding:100px 20px;
+color:#fff;
+padding:80px 0;
 }
 
-.cta h2{
-color:#ffffff;
-margin-bottom:20px;
-}
-
-.cta p{
-color:#ffffff;
-max-width:850px;
-margin:auto;
-margin-bottom:35px;
-}
-
-.cta-buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-/* =========================
-INDUSTRIES SECTION
-========================= */
-
-.section .services-grid .service-card{
-height:100%;
-}
-
-/* =========================
-HOME SECTION TITLES
-========================= */
-
-.section > .container > h2{
-text-align:center;
-margin-bottom:20px;
-}
-
-/* =========================
-NICE SPACING
-========================= */
-
-.page-hero,
-.section,
-.blue-band,
-.cta{
-overflow:hidden;
-}
-
-
-
-/* =========================================
-PART 3
-SERVICES + TEAM + CONTACT +
-CONNECT + THANK YOU
-========================================= */
-
-/* =========================
-SERVICES HERO
-========================= */
-
-.services-hero{
-min-height:600px;
-
-background:
-linear-gradient(
-rgba(11,35,65,.72),
-rgba(11,35,65,.72)
-),
-url("images/imagesservices-banner.jpg");
-
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-}
-
-.services-overlay{
-max-width:1000px;
-padding:40px;
-}
-
-.services-overlay h1{
-font-size:56px;
-line-height:1.15;
-color:#ffffff;
-margin-bottom:25px;
-}
-
-.services-overlay p{
-font-size:20px;
-color:#ffffff;
-max-width:900px;
-margin:auto;
-}
-
-/* =========================
-SERVICES SECTION
-========================= */
-
-.services-section{
-padding:100px 0;
-background:#f7f8fa;
-}
-
-.services-section .services-grid{
+.band-grid{
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:30px;
+grid-template-columns:1fr 1fr 1fr;
+gap:40px;
+align-items:center;
 }
 
-.services-section .service-card{
-padding:35px;
-}
-
-.services-section .service-card h2{
-font-size:24px;
+.band-grid h2{
+font-size:42px;
 }
 
 /* =========================
-SERVICES CTA
-========================= */
-
-.services-cta{
-background:#0b2341;
-padding:110px 20px;
-text-align:center;
-color:#ffffff;
-}
-
-.services-cta h2{
-color:#ffffff;
-margin-bottom:20px;
-}
-
-.services-cta p{
-color:#ffffff;
-max-width:850px;
-margin:auto;
-margin-bottom:35px;
-}
-
-/* =========================
-TEAM PAGE
+   TEAM PAGE
 ========================= */
 
 .team-section{
 padding:100px 0;
-background:#ffffff;
+background:#fff;
 }
 
 .team-title{
 text-align:center;
-margin-bottom:90px;
+margin-bottom:80px;
 }
 
 .team-title h1{
-font-size:54px;
-margin-bottom:20px;
-color:#0b2341;
+font-size:48px;
+margin-bottom:15px;
 }
 
 .team-title p{
-max-width:850px;
+max-width:700px;
 margin:auto;
 }
 
 .team-member{
 display:grid;
-grid-template-columns:320px 1fr;
+grid-template-columns:300px 1fr;
 gap:60px;
 align-items:center;
-margin-bottom:120px;
+margin-bottom:100px;
 }
 
 .team-member img{
-width:320px;
-height:380px;
+width:300px;
+height:360px;
 object-fit:cover;
-border-radius:12px;
+border-radius:6px;
 }
 
 .team-member h2{
+font-size:32px;
 margin-bottom:5px;
 }
 
 .team-member h4{
+color:#0b2341;
 margin-bottom:20px;
 }
 
 .team-member p{
-margin-bottom:18px;
+line-height:1.8;
 }
 
 .reverse{
@@ -691,311 +246,218 @@ direction:ltr;
 }
 
 /* =========================
-CONTACT PAGE
+   FOOTER
 ========================= */
 
-form{
-background:#ffffff;
-padding:35px;
-border-radius:12px;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-form p{
-font-weight:600;
-margin-bottom:8px;
-color:#0b2341;
-}
-
-input,
-textarea{
-width:100%;
-padding:14px;
-border:1px solid #d9d9d9;
-border-radius:6px;
-font-size:15px;
-outline:none;
-transition:.3s ease;
-}
-
-input:focus,
-textarea:focus{
-border-color:#0b2341;
-box-shadow:0 0 0 3px rgba(11,35,65,.08);
-}
-
-textarea{
-resize:vertical;
-}
-
-/* =========================
-CONTACT LINKS
-========================= */
-
-.section a{
-color:#0b2341;
-font-weight:600;
-}
-
-.section a:hover{
-text-decoration:underline;
-}
-
-/* =========================
-CONNECT PAGE
-========================= */
-
-.connect-card{
-background:#ffffff;
-max-width:520px;
-width:100%;
-padding:50px 30px;
-border-radius:14px;
+footer{
+background:#0b2341;
+color:#fff;
 text-align:center;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.connect-logo{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-margin:auto auto 25px;
-border:4px solid #0b2341;
-}
-
-.connect-card h1{
-font-size:42px;
-margin-bottom:8px;
-}
-
-.designation{
-font-size:18px;
-font-weight:700;
-color:#0b2341;
-margin-bottom:8px;
-}
-
-.company{
-font-size:18px;
-color:#666;
-margin-bottom:30px;
-}
-
-.contact-info{
-margin-top:25px;
-}
-
-.contact-info p{
-margin-bottom:10px;
+padding:25px;
 }
 
 /* =========================
-THANK YOU PAGE
+   MOBILE
 ========================= */
 
-.thankyou-section{
-min-height:85vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:40px;
-text-align:center;
-}
-
-.thankyou-box{
-max-width:700px;
-}
-
-.thankyou-box h1{
-font-size:60px;
-color:#0b2341;
-margin-bottom:20px;
-}
-
-.thankyou-box p{
-font-size:22px;
-margin-bottom:35px;
-}
-
-/* =========================
-PREMIUM EFFECTS
-========================= */
-
-.team-member{
-transition:.3s ease;
-}
-
-.team-member:hover{
-transform:translateY(-3px);
-}
-
-form{
-transition:.3s ease;
-}
-
-form:hover{
-box-shadow:0 15px 35px rgba(0,0,0,.10);
-}
-
-.connect-card{
-transition:.3s ease;
-}
-
-.connect-card:hover{
-transform:translateY(-5px);
-box-shadow:0 15px 35px rgba(0,0,0,.12);
-}
-
-
-
-/* =========================================
-PART 4
-RESPONSIVE DESIGN
-========================================= */
-
-/* =========================
-TABLETS
-========================= */
-
-@media (max-width:1024px){
-
-.hero h1{
-font-size:46px;
-}
-
-.page-hero h2{
-font-size:42px;
-}
-
-.services-overlay h1{
-font-size:44px;
-}
-
-.band-grid{
-grid-template-columns:1fr;
-text-align:center;
-gap:30px;
-}
-
-.two-col{
-grid-template-columns:1fr;
-gap:40px;
-}
-
-.team-member{
-grid-template-columns:1fr;
-text-align:center;
-gap:35px;
-}
-
-.team-member img{
-margin:auto;
-}
-
-.reverse{
-direction:ltr;
-}
-
-.services-grid,
-.services-section .services-grid{
-grid-template-columns:1fr;
-}
-
-}
-
-/* =========================
-MOBILE DEVICES
-========================= */
-
-@media (max-width:768px){
-
-/* Header */
+@media(max-width:768px){
 
 header{
 flex-direction:column;
-gap:18px;
-padding:20px;
-}
-
-.logo{
-flex-direction:column;
-text-align:center;
-}
-
-.logo span{
-font-size:13px;
-}
-
-.header-logo{
-width:70px;
-height:70px;
-}
-
-.nav-links{
-flex-wrap:wrap;
-justify-content:center;
 gap:15px;
-}
-
-/* Hero */
-
-.hero{
-min-height:70vh;
-padding:80px 20px;
 }
 
 .hero h1{
 font-size:34px;
-line-height:1.25;
 }
 
 .hero p{
 font-size:18px;
 }
 
-/* About Hero */
-
-.page-hero{
-padding:70px 0;
+.intro h2{
+font-size:30px;
 }
 
 .page-hero h2{
-font-size:32px;
-text-align:center;
+font-size:34px;
 }
-
-.page-hero p{
-text-align:center;
-font-size:16px;
-}
-
-/* Sections */
-
-.section{
-padding:70px 0;
-}
-
-.section h2{
-font-size:30px;
-text-align:center;
-}
-
-.section p{
-text-align:center;
-}
-
-/* Two Column */
 
 .two-col{
 grid-template-columns:1fr;
+}
+
+.band-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.team-member{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.team-member img{
+width:100%;
+height:auto;
+}
+
+.reverse{
+direction:ltr;
+}
+
+.team-title h1{
+font-size:34px;
+}
+
+.logo{
+text-align:center;
+}
+
+}
+/* HEADER NAVIGATION */
+
+header nav{
+display:flex;
+align-items:center;
+gap:25px;
+}
+
+.nav-link{
+text-decoration:none;
+color:#111;
+font-weight:600;
+}
+
+.nav-link:hover{
+color:#0b2341;
+}
+
+header .btn{
+padding:12px 28px;
+}
+
+
+/* =========================
+   SERVICES PAGE
+========================= */
+
+.services-hero{
+background:
+linear-gradient(
+rgba(11,35,65,0.65),
+rgba(11,35,65,0.65)
+),
+url("images/imagesservices-banner.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+min-height:550px;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.services-overlay{
+padding:80px;
+text-align:center;
+max-width:1000px;
+margin:40px;
+}
+
+.services-overlay h1{
+color:white;
+font-size:52px;
+line-height:1.1;
+margin-bottom:25px;
+}
+
+.services-overlay p{
+color:white;
+font-size:20px;
+line-height:1.8;
+max-width:800px;
+margin:auto;
+}
+
+.services-section{
+padding:90px 10%;
+background:#f8f9fb;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
 gap:35px;
 }
 
-/* Services */
+.service-card{
+background:white;
+padding:35px;
+border-radius:8px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-6px);
+}
+
+.service-card h2{
+font-size:26px;
+margin-bottom:15px;
+color:#0b2341;
+}
+
+.service-card p{
+font-size:16px;
+line-height:1.8;
+color:#444;
+}
+
+.services-cta{
+background:#0b2341;
+color:white;
+text-align:center;
+padding:120px 10%;
+}
+
+.services-cta h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.services-cta p{
+font-size:18px;
+max-width:800px;
+margin:auto;
+margin-bottom:40px;
+line-height:1.8;
+}
+
+.cta-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.services-cta .btn{
+background:white;
+color:#0b2341;
+font-weight:bold;
+}
+
+.services-cta .btn:hover{
+opacity:0.9;
+}
+
+@media(max-width:768px){
 
 .services-overlay{
-padding:20px;
+padding:40px 25px;
 }
 
 .services-overlay h1{
@@ -1010,199 +472,87 @@ font-size:16px;
 grid-template-columns:1fr;
 }
 
-.service-card{
-padding:25px;
-}
-
-.service-card h2{
-font-size:22px;
-}
-
-.service-card h3{
-font-size:22px;
-}
-
-/* Team */
-
-.team-title h1{
-font-size:34px;
-}
-
-.team-member{
-grid-template-columns:1fr;
-gap:30px;
-text-align:center;
-margin-bottom:80px;
-}
-
-.team-member img{
-width:100%;
-max-width:320px;
-height:auto;
-margin:auto;
-}
-
-/* Founder */
-
-.founder-card{
-padding:30px;
-}
-
-/* Expertise */
-
-.expertise-list li{
-font-size:16px;
-}
-
-/* CTA */
-
-.cta,
-.services-cta{
-padding:80px 20px;
-}
-
-.cta h2,
 .services-cta h2{
 font-size:30px;
 }
 
-.cta-buttons{
-flex-direction:column;
-align-items:center;
+}
+.services-cta .btn{
+display:inline-block;
+padding:16px 34px;
+font-size:16px;
+font-weight:700;
+text-transform:uppercase;
+}
+.services-cta .btn{
+color:#002b4f;
+background:white;
+font-weight:700;
+}
+header nav a,
+header nav a:visited{
+    color:#0b2341 !important;
+    text-decoration:none;
 }
 
-.cta-buttons .btn{
-width:100%;
-max-width:320px;
+header nav a:hover{
+    color:#35506f !important;
 }
 
-/* Connect Page */
-
-.connect-card{
-padding:35px 20px;
+.services-cta .btn{
+    background:#ffffff !important;
+    color:#0b2341 !important;
+    padding:16px 34px;
+    border-radius:4px;
+    font-weight:700;
+    text-decoration:none;
+    display:inline-block;
 }
 
-.connect-logo{
-width:140px;
-height:140px;
+.services-cta .btn:hover{
+    background:#e8edf2 !important;
 }
-
-.connect-card h1{
-font-size:30px;
-}
-
-/* Thank You */
-
-.thankyou-box h1{
-font-size:40px;
-}
-
-.thankyou-box p{
-font-size:18px;
-}
-
-/* Footer */
-
-.footer-buttons{
-flex-direction:column;
-align-items:center;
-}
-
-.footer-btn{
-width:220px;
-text-align:center;
-}
-
-}
-
-/* =========================
-SMALL PHONES
-========================= */
-
-@media (max-width:480px){
-
-.hero h1{
-font-size:28px;
-}
-
-.page-hero h2{
-font-size:28px;
-}
-
-.section h2{
-font-size:26px;
-}
-
-.services-overlay h1{
-font-size:28px;
-}
-
-.btn{
-padding:12px 24px;
-font-size:13px;
-}
-
-.logo span{
-font-size:12px;
-}
-
-}
-
-/* =========================================
-END OF STYLESHEET
-========================================= */
-
-/* GLOBAL BUTTON FIX */
-
-.btn,
-.btn:visited{
-background:#0b2341 !important;
-color:#ffffff !important;
-border:none;
-text-decoration:none;
-}
-
-.btn:hover{
-background:#183a63 !important;
-color:#ffffff !important;
-}
-
-/* HEADER BOOK NOW FIX */
+/* BOOK NOW button text fix */
 
 header .btn,
 header .btn:visited{
-background:#0b2341 !important;
-color:#ffffff !important;
-padding:14px 28px !important;
-border-radius:6px !important;
-display:inline-block !important;
-font-weight:700 !important;
-text-decoration:none !important;
+    color:#ffffff !important;
 }
 
-/* FOOTER FIX */
-
-footer{
-background:#0b2341 !important;
-color:#ffffff !important;
-text-align:center;
-padding:40px 20px !important;
+header .btn:hover{
+    color:#ffffff !important;
 }
 
-footer p{
-color:#ffffff !important;
+/* ABOUT PAGE CTA BUTTON FIX */
+
+.cta .btn{
+    background:#ffffff !important;
+    color:#0b2341 !important;
+    padding:16px 34px !important;
+    border-radius:6px !important;
+    text-decoration:none !important;
+    font-weight:700 !important;
+    display:inline-block !important;
+    margin:10px !important;
 }
 
-footer a{
-color:#ffffff !important;
+.cta .btn:hover{
+    background:#e8edf2 !important;
+}
+
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
 }
 
 .footer-buttons{
 display:flex;
 justify-content:center;
-align-items:center;
 gap:15px;
-margin-top:25px;
+margin-top:20px;
 flex-wrap:wrap;
 }
 
@@ -1217,19 +567,293 @@ display:inline-block;
 }
 
 .footer-btn:hover{
-background:#e9eef5;
+background:#e8edf2;
 }
 
-.cta-buttons{
+
+/* HEADER LOGO */
+
+.logo{
 display:flex;
-justify-content:center;
 align-items:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:30px;
+gap:12px;
 }
 
-.cta-buttons .btn{
-min-width:260px;
+.header-logo{
+width:45px;
+height:45px;
+border-radius:50%;
+object-fit:cover;
+}
+
+@media(max-width:768px){
+
+.logo{
+flex-direction:column;
 text-align:center;
+}
+
+.header-logo{
+width:65px;
+height:65px;
+}
+
+}
+
+/* =====================================
+   PREMIUM WEBSITE ENHANCEMENTS
+   Add at END of CSS
+===================================== */
+
+/* Smooth scrolling */
+
+html{
+scroll-behavior:smooth;
+}
+
+/* Page fade-in */
+
+body{
+animation:pageFade 0.8s ease;
+}
+
+@keyframes pageFade{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+/* Premium service cards */
+
+.service-card{
+transition:
+transform 0.35s ease,
+box-shadow 0.35s ease,
+background 0.35s ease;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* Footer buttons */
+
+.footer-btn{
+transition:
+transform 0.3s ease,
+background 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+.footer-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Main buttons */
+
+.btn{
+transition:
+transform 0.3s ease,
+box-shadow 0.3s ease,
+opacity 0.3s ease;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Team images */
+
+.team-member img{
+transition:
+transform 0.4s ease,
+box-shadow 0.4s ease;
+}
+
+.team-member img:hover{
+transform:scale(1.03);
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* About page images */
+
+.two-col img{
+transition:
+transform 0.4s ease,
+box-shadow 0.4s ease;
+}
+
+.two-col img:hover{
+transform:scale(1.03);
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Navigation */
+
+.nav-links a,
+nav a{
+transition:color 0.3s ease;
+}
+
+.nav-links a:hover,
+nav a:hover{
+color:#35506f;
+}
+
+/* Header */
+
+header{
+transition:all 0.3s ease;
+}
+
+/* Section headings */
+
+.section h2,
+.page-hero h2,
+.team-title h1{
+transition:all 0.3s ease;
+}
+
+/* Premium footer */
+
+footer{
+padding:40px 20px;
+}
+
+/* Better spacing on mobile */
+
+@media(max-width:768px){
+
+.service-card{
+padding:25px;
+}
+
+footer{
+padding:30px 15px;
+}
+
+}
+
+
+/* ========================================
+   ABOUT PAGE PREMIUM ENHANCEMENTS
+======================================== */
+
+/* Better Section Spacing */
+
+.page-hero,
+.section{
+padding-top:90px;
+padding-bottom:90px;
+}
+
+/* Headings */
+
+.page-hero h2,
+.section h2{
+color:#0b2341;
+font-size:42px;
+margin-bottom:25px;
+line-height:1.2;
+}
+
+.section p{
+font-size:17px;
+}
+
+/* Image Effects */
+
+.page-hero img,
+.two-col img{
+border-radius:10px;
+transition:all .5s ease;
+box-shadow:0 10px 30px rgba(0,0,0,.10);
+}
+
+.page-hero img:hover,
+.two-col img:hover{
+transform:scale(1.03);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* Mission Section */
+
+.section h2{
+margin-bottom:20px;
+}
+
+/* Values Cards */
+
+.services-grid{
+margin-top:40px;
+}
+
+.service-card{
+transition:all .35s ease;
+cursor:pointer;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* Expertise List */
+
+.section p{
+transition:.3s;
+}
+
+.section p:hover{
+transform:translateX(6px);
+}
+
+/* CTA */
+
+.cta{
+overflow:hidden;
+position:relative;
+}
+
+.cta .btn{
+transition:all .3s ease !important;
+}
+
+.cta .btn:hover{
+transform:translateY(-3px);
+}
+
+/* Footer */
+
+footer{
+padding:35px;
+}
+
+/* Mobile Improvements */
+
+@media(max-width:768px){
+
+.page-hero h2,
+.section h2{
+font-size:30px;
+text-align:center;
+}
+
+.page-hero p,
+.section p{
+text-align:center;
+}
+
+.page-hero,
+.section{
+padding-top:60px;
+padding-bottom:60px;
+}
+
 }
